@@ -3,7 +3,8 @@ var app = express();
 var fs = require('fs');
 app.use(express.logger());
 
-var buf = new Buffer(fs.readFileSync('index.html');
+var buf = new Buffer(fs.readFileSync('index.html'));
+>>>>>>> changed web.js to use index.html
 var splashtext = buf.toString();
 
 app.get('/', function(request, response) {
